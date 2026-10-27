@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ribble Valley Apps</title>
+<meta name="description" content="Ribble Valley Apps makes thoughtful apps for iPhone.">
+<style>
+  :root {
+    --paper: #F6F1E7;
+    --ink: #2B231D;
+    --muted: #5C4E40;
+    --rule: #DDD2C0;
+    --accent: #B4501F;
+    --card: #FBF8F2;
+    --kraft: #C4A57A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1E1B19;
+      --ink: #EFE7D9;
+      --muted: #BDB09C;
+      --rule: #3A342F;
+      --accent: #F0915C;
+      --card: #262220;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  .eyebrow, .links, footer {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .eyebrow { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+  h1, h2 {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1.05;
+  }
+  h1 { font-size: clamp(32px, 7vw, 48px); margin: 0 0 16px; }
+  h2 { font-size: 28px; margin: 0 0 4px; }
+  .app {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 40px;
+  }
+  .swatch {
+    flex: 0 0 64px;
+    height: 88px;
+    border-radius: 6px;
+    background: var(--kraft);
+    box-shadow: inset 6px 0 0 rgba(0,0,0,0.12);
+  }
+  .app p { margin: 0 0 12px; }
+  .links { font-size: 13px; display: flex; gap: 20px; flex-wrap: wrap; }
+  a { color: var(--accent); }
+  footer { font-size: 12px; color: var(--muted); margin-top: 56px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Independent apps for iPhone</p>
+  <h1>Ribble Valley Apps</h1>
+  <p>Small, carefully made apps that respect your privacy.</p>
+
+  <section class="app" aria-labelledby="folio">
+    <div class="swatch" aria-hidden="true"></div>
+    <div>
+      <h2 id="folio">Folio</h2>
+      <p>Field memo &amp; sketchbook. The pocket notebook, reimagined, and best on iPhone Duo.</p>
+      <p class="links"><a href="folio/support/">Support</a><a href="folio/privacy/">Privacy</a></p>
+    </div>
+  </section>
+
+  <footer>© 2026 Ribble Valley Apps · <a href="mailto:ribblevalleyapps@gmail.com">ribblevalleyapps@gmail.com</a></footer>
+</main>
+</body>
+</html>
