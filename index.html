@@ -14,6 +14,7 @@
     --accent: #B4501F;
     --card: #FBF8F2;
     --kraft: #C4A57A;
+    --mepo: linear-gradient(135deg, #5B7CFA, #9B5DE5);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -58,14 +59,22 @@
     border: 1px solid var(--rule);
     border-radius: 12px;
     padding: 24px;
-    margin-top: 40px;
+    margin-top: 24px;
   }
+  .app:first-of-type { margin-top: 40px; }
   .swatch {
     flex: 0 0 64px;
     height: 88px;
     border-radius: 6px;
     background: var(--kraft);
     box-shadow: inset 6px 0 0 rgba(0,0,0,0.12);
+  }
+  .swatch-mepo {
+    flex: 0 0 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--mepo);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.35), 0 4px 12px rgba(91,124,250,0.2);
   }
   .app p { margin: 0 0 12px; }
   .links { font-size: 13px; display: flex; gap: 20px; flex-wrap: wrap; }
@@ -85,6 +94,15 @@
       <h2 id="folio">Folio</h2>
       <p>Field memo &amp; sketchbook. The pocket notebook, reimagined, and best on iPhone Duo.</p>
       <p class="links"><a href="folio/support/">Support</a><a href="folio/privacy/">Privacy</a></p>
+    </div>
+  </section>
+
+  <section class="app" aria-labelledby="mepo">
+    <div class="swatch-mepo" aria-hidden="true"></div>
+    <div>
+      <h2 id="mepo">Mepo</h2>
+      <p>Memories &amp; reminders. Jot down the places you love and smart to-dos that know where you are, kept privately on your device.</p>
+      <p class="links"><a href="mepo/support/">Support</a><a href="mepo/privacy/">Privacy</a></p>
     </div>
   </section>
 
