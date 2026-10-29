@@ -15,6 +15,7 @@
     --card: #FBF8F2;
     --kraft: #C4A57A;
     --mepo: linear-gradient(135deg, #5B7CFA, #9B5DE5);
+    --duo: linear-gradient(135deg, #4CC9F0, #EF476F);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -76,6 +77,13 @@
     background: var(--mepo);
     box-shadow: inset 0 1px 1px rgba(255,255,255,0.35), 0 4px 12px rgba(91,124,250,0.2);
   }
+  .swatch-duo {
+    flex: 0 0 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--duo);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.35), 0 4px 12px rgba(76,201,240,0.25);
+  }
   .app p { margin: 0 0 12px; }
   .links { font-size: 13px; display: flex; gap: 20px; flex-wrap: wrap; }
   a { color: var(--accent); }
@@ -103,6 +111,15 @@
       <h2 id="mepo">Mepo</h2>
       <p>Memories &amp; reminders. Jot down the places you love and smart to-dos that know where you are, kept privately on your device.</p>
       <p class="links"><a href="mepo/support/">Support</a><a href="mepo/privacy/">Privacy</a></p>
+    </div>
+  </section>
+
+  <section class="app" aria-labelledby="duo">
+    <div class="swatch-duo" aria-hidden="true"></div>
+    <div>
+      <h2 id="duo">Ready Player Duo</h2>
+      <p>Six classic tabletop games for two players on one screen. Put the phone between you and settle scores face-to-face.</p>
+      <p class="links"><a href="duo/support/">Support</a><a href="duo/privacy/">Privacy</a></p>
     </div>
   </section>
 
